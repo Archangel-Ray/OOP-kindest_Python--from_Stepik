@@ -1,0 +1,40 @@
+quiz questions in this lesson:
+
+1.  Check all correct, from the point of view of the PEP8 standard, class names.
+    >> SergeyBalakirev
+    >> DataBase
+    >> Data123
+
+2.  Choose statements that are true for Python language classes.
+    >> Each class (declared in the program) can be thought of as a new (custom) data type.
+    >> The class describes a template for the formation of its objects.
+    >> A class forms a namespace for the variables and methods declared within it.
+
+3.  Select the correct attribute value to be displayed when the following program is executed:
+
+
+    class Figures:
+    type = 'ellipse'
+    color = 'red'
+
+
+    fig1 = Figures()
+    print(fig1.color)
+
+    >> red
+
+4.  Choose the correct ways to remove the tp attribute from the Point class.
+    >> del Point.tp
+    >> delattr(Point, 'tp')
+
+5.  The program declares the following class:
+
+    class Magazine:
+    name = 'Science and life'
+    price = 1101
+
+    What happens when you run the command:
+
+    print(getattr(Magazine, 'id'))
+
+    >> Error because the id attribute is missing from the Magazine class
