@@ -1,0 +1,45 @@
+quiz questions in this lesson:
+
+1.  What is a class method?
+    >> Any (non-static) function declared inside a class
+
+2.  What are class attributes?
+    >> Variables and method names (references to methods) of a class
+
+3.  What role does the self parameter play in class methods?
+    >> is a reference to the class object from which the method was called
+
+4.  There is the following class:
+
+    class Stepik:
+        def next_task(self):
+            return 'Next task'
+
+    And an object of this class is created:
+
+    my_st = stepik()
+
+    Select all correct options for calling the next_task() method
+
+    >> Stepik.next_task(my_st)
+    >> my_st.next_task()
+
+5.  The class is declared in the program:
+
+    class String:
+        is_empty = False
+
+    And then two instances of it are created:
+
+    s1 = String()
+    s2 = String()
+
+    After that, the command is executed:
+
+    s2.is_empty = True
+
+    Select the correct statements related to this program.
+    >> The variable a = s1.is_empty will refer to the is_empty attribute of the String class
+    >> The variable b = s2.is_empty will refer to the local attribute is_empty of the object s2
+    >> s1.is_empty will still be False and s2.is_empty will be new True
+    >> The last command will create a local property is_empty with a value of True on the s2 instance
