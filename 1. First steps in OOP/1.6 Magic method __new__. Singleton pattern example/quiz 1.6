@@ -1,0 +1,27 @@
+quiz questions in this lesson:
+
+1.  At what point is the __new__() magic method called?
+    >> just before the class object is created
+
+2.  What must the __new__() magic method return to successfully create class objects?
+    >> address of the newly created object
+
+3.  The class constructor (__new__ method) can be written with the following signature:
+
+    def __new__(cls, *args, **kwargs): ...
+
+    What role does the first parameter cls play here?
+    >> reference to the class for which the object is being created
+
+4.  In what order are the __new__() class constructor and __init__()
+    initializer called when the class object is created?
+    >> the __new__() method is always called first, then the __init__() method
+
+5.  When overriding the __new__() method, the object is created by the super().__new__(cls) command:
+
+    def __new__(cls, *args, **kwargs):
+    return super().__new__(cls)
+
+    Choose the correct statement to explain it.
+    >> There is a call to the base class from which the constructor is called - the __new__(cls)
+    method with the cls argument - references to the current class
