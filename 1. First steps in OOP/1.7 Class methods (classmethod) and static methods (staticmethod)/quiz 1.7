@@ -1,0 +1,60 @@
+quiz questions in this lesson:
+
+1.  The program declares the following class with one method:
+
+    classStepik:
+        def get_certificate(self):
+            return False
+
+    And an object of this class is created:
+
+    st = Stepik()
+
+    Select all valid options for calling the get_certificate method:
+    >> Stepik.get_certificate(st)
+    >> st.get_certificate()
+
+2.  The program declares the following class with one method:
+
+    class loader:
+        @classmethod
+        def json_parse(cls):
+            return ''
+
+    And an object of this class is created:
+
+    ld = Loader()
+
+    Select all valid options for calling the json_parse method:
+    >> Loader.json_parse()
+    >> res = ld.json_parse()
+    >> res = Loader.json_parse()
+    >> ld.json_parse()
+
+3.  The program declares the following class with one method:
+
+    class Math:
+        @staticmethod
+        def sqrt(x):
+            return x ** 0.5
+
+    And an object of this class is created:
+
+    m = Math()
+
+    Select all correct options for calling the sqrt method:
+    >> res = m.sqrt(2)
+    >> res = Math.sqrt(4)
+
+4.  What is the responsibility of the cls parameter in the class methods declared as follows:
+
+    class loader:
+        @classmethod
+        def json_parse(cls): ...
+
+    >> Reference to class Loader
+
+5.  What is the difference between class methods (declared via @classmethod)
+    and static methods (declared via @staticmethod)?
+    >> class methods are designed to work with class attributes and arguments passed to them, while static methods
+    only work with arguments passed to them.
